@@ -1,55 +1,113 @@
 <!DOCTYPE html>
-<html lang="en-US">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fishie</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <link rel="icon" href="./images/photo_2023-03-30_13-08-07.jpg" type="image/x-icon" />
+    <title>Security Researcher | Terminal</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+    <div class="terminals-grid">
+        <!-- Bio & Socials Terminal -->
+        <div class="terminal-container">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <span class="btn-close"></span>
+                    <span class="btn-minimize"></span>
+                    <span class="btn-maximize"></span>
+                </div>
+                <div class="terminal-title">whoami</div>
+            </div>
+            <div class="terminal-content">
+                <div class="prompt-line">
+                    <span class="prompt">Fishie@portfolio:~$</span>
+                    <span class="command">cat bio.txt</span>
+                </div>
+                <div class="bio-content">
+                    <p class="intro-text">
+                        > Security Researcher | YouTuber | Developer<br>
+                        > Exploring vulnerabilities and building secure systems<br>
+                        > Breaking things to make them better
+                    </p>
+                </div>
+                <div class="prompt-line">
+                    <span class="prompt">Fishie@portfolio:~$</span>
+                    <span class="command">cat socials.txt</span>
+                </div>
+                <div id="socials" class="content-list">
+                    <!-- Dynamic content will be loaded here -->
+                    <div class="content-item">
+                        <span class="file-icon">[>]</span>
+                        <a href="#" class="content-link">YouTube</a>
+                    </div>
+                </div>
+                <div class="prompt-line cursor-blink">
+                    <span class="prompt">Fishie@portfolio:~$</span>
+                    <span class="cursor">_</span>
+                </div>
+            </div>
+        </div>
 
-    <a class="profilePicture">
-        <img src="./images/photo_2023-03-30_13-08-07.jpg" alt="Profile Picture">
-    </a>
+        <!-- Articles Terminal -->
+        <div class="terminal-container">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <span class="btn-close"></span>
+                    <span class="btn-minimize"></span>
+                    <span class="btn-maximize"></span>
+                </div>
+                <div class="terminal-title">featured-articles/</div>
+            </div>
+            <div class="terminal-content">
+                <div class="prompt-line">
+                    <span class="prompt">Fishie@portfolio:~$</span>
+                    <span class="command">ls featured-articles/</span>
+                </div>
+                <div id="articles" class="content-list">
+                    <!-- Dynamic content will be loaded here -->
+                    <div class="content-item">
+                        <span class="file-icon">[+]</span>
+                        <a href="#" class="content-link">Article Title Here</a>
+                    </div>
+                </div>
+                <div class="prompt-line cursor-blink">
+                    <span class="prompt">Fishie@portfolio:~$</span>
+                    <span class="cursor">_</span>
+                </div>
+            </div>
+        </div>
 
-    <div class="userName">
-        Fishie
+        <!-- Projects Terminal -->
+        <div class="terminal-container">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <span class="btn-close"></span>
+                    <span class="btn-minimize"></span>
+                    <span class="btn-maximize"></span>
+                </div>
+                <div class="terminal-title">projects/</div>
+            </div>
+            <div class="terminal-content">
+                <div class="prompt-line">
+                    <span class="prompt">Fishie@portfolio:~$</span>
+                    <span class="command">ls projects/</span>
+                </div>
+                <div id="websites" class="content-list">
+                    <!-- Dynamic content will be loaded here -->
+                    <div class="content-item">
+                        <span class="file-icon">[*]</span>
+                        <a href="#" class="content-link">Project Name</a>
+                        <span class="description">- Project description</span>
+                    </div>
+                </div>
+                <div class="prompt-line cursor-blink">
+                    <span class="prompt">Fishie@portfolio:~$</span>
+                    <span class="cursor">_</span>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="description">
-        @WhoIsFishie.
-    </div>
-
-    <div class="links">
-        <a class="link" href="https://whoisfishie.github.io/haveibeenpwnedmv/" target="_blank">
-            <i class="fab ">&nbsp;</i>Have I been Pwned?
-        </a>
-        <a class="link" href="https://www.youtube.com/channel/UC2_RXzEoJK1Ounvd0zvwn8w" target="_blank">
-            <i class="fab ">&nbsp;</i>YouTube
-        </a>
-        <a class="link" href="https://x.com/WhoIsFishie" target="_blank">
-            <i class="fab ">&nbsp;</i>Twitter
-        </a>
-          <a class="link" href="https://bsky.app/profile/whoisfishie.bsky.social" target="_blank">
-            <i class="fab ">&nbsp;</i>Blue Sky
-        </a>
-         <a class="link" href="https://www.tiktok.com/@whoisfishie" target="_blank">
-            <i class="fab ">&nbsp;</i>TikTok
-        </a>
-        <a class="link" href="https://www.instagram.com/whoisfishie/" target="_blank">
-            <i class="fab ">&nbsp;</i>Instagram
-        </a>
-         <a class="link" href="https://t.me/fishieposting" target="_blank">
-            <i class="fab ">&nbsp;</i>Telegram
-        </a>
-        <a class="link" href="https://github.com/WhoIsFishie" target="_blank">
-            <i class="fab ">&nbsp;</i>Github
-        </a>
-    </div>
+    <script src="app.js"></script>
 </body>
-
 </html>

@@ -1,0 +1,309 @@
+/* Import Anonymous Pro Font */
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap');
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-black: #000000;
+    --bg-dark: #0a0a0a;
+    --red: #ff0000;
+    --red-dim: #cc0000;
+    --white: #ffffff;
+    --gray: #666666;
+    --border-gray: #333333;
+}
+
+body {
+    font-family: 'Anonymous Pro', monospace;
+    background-color: var(--bg-black);
+    color: var(--white);
+    line-height: 1.6;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Terminals Grid Layout */
+.terminals-grid {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Bio terminal spans full height on left */
+.terminal-container:first-child {
+    grid-row: 1 / 3;
+}
+
+/* Terminal Container */
+.terminal-container {
+    background-color: var(--bg-dark);
+    border: 2px solid var(--red);
+    overflow: hidden;
+}
+
+/* Terminal Header */
+.terminal-header {
+    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid var(--red);
+}
+
+.terminal-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.terminal-buttons span {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.btn-close {
+    color: var(--red);
+}
+
+.btn-close::before {
+    content: '[X]';
+}
+
+.btn-minimize {
+    color: var(--gray);
+}
+
+.btn-minimize::before {
+    content: '[-]';
+}
+
+.btn-maximize {
+    color: var(--gray);
+}
+
+.btn-maximize::before {
+    content: '[□]';
+}
+
+.terminal-title {
+    color: var(--white);
+    font-size: 14px;
+    font-weight: bold;
+    flex: 1;
+    text-align: center;
+}
+
+/* Terminal Content */
+.terminal-content {
+    padding: 20px;
+    min-height: 200px;
+}
+
+/* Welcome Section */
+.welcome-section {
+    margin-bottom: 40px;
+}
+
+.ascii-art {
+    color: var(--red);
+    font-size: 10px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+}
+
+.prompt-line {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.prompt {
+    color: var(--red);
+    font-weight: bold;
+}
+
+.command {
+    color: var(--white);
+}
+
+.intro-text {
+    color: var(--white);
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+/* Content Sections */
+.content-section {
+    margin-bottom: 40px;
+}
+
+.content-list {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.content-item {
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.content-item-header {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.content-item-inline .description {
+    padding-left: 0;
+}
+
+.file-icon {
+    color: var(--red);
+    font-weight: bold;
+    min-width: 30px;
+}
+
+.content-link {
+    color: var(--white);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 80%;
+}
+
+.content-link:hover {
+    color: var(--red);
+    text-decoration: underline;
+}
+
+.content-link:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--red);
+    transition: width 0.3s ease;
+}
+
+.content-link:hover:before {
+    width: 100%;
+}
+
+.description {
+    color: var(--gray);
+    font-size: 14px;
+    padding-left: 40px;
+    word-wrap: break-word;
+}
+
+/* Cursor Animation */
+.cursor-blink {
+    animation: fade 2s ease-in-out infinite;
+}
+
+.cursor {
+    color: var(--red);
+    font-weight: bold;
+    animation: fade 2s ease-in-out infinite;
+}
+
+@keyframes fade {
+    0%, 100% {
+        opacity: 0.9;
+    }
+    50% {
+        opacity: 0.3;
+    }
+}
+
+/* Responsive Design - Mobile */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .terminals-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .terminal-container:first-child {
+        grid-row: auto;
+    }
+
+    .terminal-content {
+        padding: 15px;
+    }
+
+    .terminal-header {
+        padding: 10px;
+    }
+
+    .terminal-title {
+        font-size: 12px;
+    }
+
+    .content-item {
+        font-size: 14px;
+    }
+
+    .prompt-line {
+        font-size: 14px;
+    }
+}
+
+/* Responsive Design - Tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .terminals-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .terminal-container:first-child {
+        grid-row: auto;
+    }
+}
+
+/* Responsive Design - Desktop */
+@media (min-width: 1200px) {
+    .terminal-content {
+        padding: 25px;
+    }
+
+    .terminals-grid {
+        gap: 25px;
+    }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--red);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--red-dim);
+}

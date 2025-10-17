@@ -1,0 +1,93 @@
+{
+  "bio": {
+    "title": "Security Researcher | YouTuber | Developer",
+    "tagline": "Building cool shit",
+    "description": "Im not a big fan of skinwalkers 30/30"
+  },
+  "articles": [
+    {
+      "title": "We Dont Need Loans We Need Income",
+      "url": "https://maldivesindependent.com/opinion/we-dont-need-loans-we-need-income-content-creators-on-new-empowerment-scheme-60b6",
+      "source": "maldives independent"
+    },
+    {
+      "title": "Maldives Data Crisis",
+      "url": "https://maldivesindependent.com/by-saif-fathih/maldives-data-crisis-citizens-personal-information-sold-for-us-9700-0975",
+      "source": "maldives independent"
+    },
+    {
+      "title": "Raajjeyge digital khidhumaithakugai data ge rakkaatherikan kuda",
+      "url": "https://technews.mv/23384",
+      "source": "technews"
+    },
+    {
+      "title": "Maldives Public Data Leaks",
+      "url": "https://globalsouthmedianews.com/307-2/",
+      "source": "global south media news"
+    }
+  ],
+  "socials": [
+    {
+      "platform": "YouTube",
+      "username": "",
+      "url": "https://www.youtube.com/@WhoIsFishie"
+    },
+    {
+      "platform": "Twitter",
+      "username": "",
+      "url": "https://twitter.com/WhoIsFishie"
+    },
+    {
+      "platform": "GitHub",
+      "username": "",
+      "url": "https://github.com/whoisfishie"
+    },
+    {
+      "platform": "Telegram",
+      "username": "",
+      "url": "https://t.me/WhoIsFishie"
+    }
+  ],
+  "projects": [
+    {
+      "name": "haveibeenpwnedmv",
+      "description": "a website to show mv sites/apps which leaked user data",
+      "url": "https://whoisfishie.github.io/haveibeenpwnedmv/"
+    },
+     {
+      "name": "Olhu Hiyaa Investigation",
+      "description": "a website to visualize the Olhu Hiyaa Investigation report",
+      "url": "https://whoisfishie.github.io/olhuvali-hiya/"
+    },
+    {
+      "name": "Sarcraft Wiki",
+      "description": "a wiki to document SarCraft",
+      "url": "https://whoisfishie.github.io/SarCraft-Documentation/SarCraft/"
+    },
+    {
+      "name": "Adeeb_Files_Chats",
+      "description": "a website to easily browse the chats in adeeb files",
+      "url": "https://whoisfishie.github.io/bro-sms/?url=https%3A%2F%2Fbrofiles.tharutheebu.com%2Ftimeline.json"
+    },
+    {
+      "name": "Adeeb_Files_SMS",
+      "description": "a website to easily browse the sms in adeeb files",
+      "url": "https://whoisfishie.github.io/bro-sms/?url=https%3A%2F%2Farchive.org%2Fdownload%2Fbro-sms%2Fbro-sms.json"
+    },
+    {
+      "name": "Adeeb_Files_Notes",
+      "description": "a website to easily browse the notes in adeeb files",
+      "url": "https://whoisfishie.github.io/notes-visualizer/?json=https%3A%2F%2Farchive.org%2Fdownload%2Fbro-sms%2Fbro-notes.json"
+    },
+    {
+      "name": "Adeeb_Files_Map",
+      "description": "a website to easily browse geo locations in adeeb files",
+      "url": "https://whoisfishie.github.io/bro-location/?json=https://ia802809.us.archive.org/28/items/bro-timeline._locations/bro-timeline._locations.json"
+    },
+    {
+      "name": "CTRLehNukureveyne",
+      "description": "a website to raise awarness for the media control bill",
+      "url": "https://whoisfishie.github.io/CTRLehNukureveyne/"
+    }
+  ]
+}
