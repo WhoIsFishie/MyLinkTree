@@ -1,6 +1,6 @@
 {
   "bio": {
-    "title": "Security Researcher | YouTuber | Developer",
+    "title": "Independent Security Researcher | YouTuber | Developer | Hater",
     "tagline": "Building cool shit",
     "description": "Im not a big fan of skinwalkers 30/30"
   },
@@ -33,6 +33,11 @@
       "url": "https://www.youtube.com/@WhoIsFishie"
     },
     {
+      "platform": "TikTok",
+      "username": "",
+      "url": "https://www.tiktok.com/@whoisfishie"
+    },
+    {
       "platform": "Twitter",
       "username": "",
       "url": "https://twitter.com/WhoIsFishie"
@@ -43,14 +48,24 @@
       "url": "https://github.com/whoisfishie"
     },
     {
+      "platform": "Telegram_Channel",
+      "username": "",
+      "url": "https://t.me/fishieposting"
+    },
+    {
       "platform": "Telegram",
       "username": "",
       "url": "https://t.me/WhoIsFishie"
+    },
+    {
+      "platform": "Instagram",
+      "username": "",
+      "url": "https://www.instagram.com/whoisfishie/"
     }
   ],
   "projects": [
     {
-      "name": "haveibeenpwnedmv",
+      "name": "Have I Been Pwned MV",
       "description": "a website to show mv sites/apps which leaked user data",
       "url": "https://whoisfishie.github.io/haveibeenpwnedmv/"
     },

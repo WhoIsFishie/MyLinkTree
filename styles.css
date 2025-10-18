@@ -113,8 +113,26 @@ body {
 .ascii-art {
     color: var(--red);
     font-size: 10px;
+    line-height: 1.1;
     margin-bottom: 20px;
     overflow-x: auto;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+.ascii-art-img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    filter:
+        sepia(100%)
+        saturate(300%)
+        hue-rotate(-50deg)
+        brightness(1.1)
+        blur(0.3px)
+        contrast(1.2);
+    /* CRT-style red glow with slight blur for color bleed */
+    text-shadow: 0 0 5px var(--red);
+    image-rendering: crisp-edges;
 }
 
 .prompt-line {
