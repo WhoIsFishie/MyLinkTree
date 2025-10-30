@@ -16,6 +16,11 @@
       "source": "maldives independent"
     },
     {
+      "title": "Episode 5: Exposing the data breach with YouTuber",
+      "url": "https://maldivesindependent.com/ithuru-vaahaka/episode-5-exposing-the-data-breach-with-youtuber-whoisfishie-8820",
+      "source": "maldives independent"
+    },
+    {
       "title": "Raajjeyge digital khidhumaithakugai data ge rakkaatherikan kuda",
       "url": "https://technews.mv/23384",
       "source": "technews"
@@ -103,6 +108,16 @@
       "name": "CTRLehNukureveyne",
       "description": "a website to raise awarness for the media control bill",
       "url": "https://whoisfishie.github.io/CTRLehNukureveyne/"
+    },
+    {
+      "name": "Fishie Cyber Security",
+      "description": "youtube video series on me fucking around and finding out",
+      "url": "https://www.youtube.com/playlist?list=PLd5z2L1dLAhNPXfHV0ztqFjQcg94xrNKV"
+    },
+       {
+      "name": "Fishie Politics",
+      "description": "youtube video series on me interviewing skinwalkers ",
+      "url": "https://www.youtube.com/playlist?list=PLd5z2L1dLAhNi_yInCQpSfDZn08yNvCnt"
     }
   ]
 }
