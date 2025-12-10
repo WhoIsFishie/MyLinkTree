@@ -70,6 +70,11 @@
   ],
   "projects": [
     {
+      "name": "W-Petition",
+      "description": "backend for an E-Petition cause the parliment disapointed me",
+      "url": "https://github.com/MvDevsUnion/WPetition"
+    },
+    {
       "name": "Have I Been Pwned MV",
       "description": "a website to show mv sites/apps which leaked user data",
       "url": "https://whoisfishie.github.io/haveibeenpwnedmv/"
