@@ -70,6 +70,11 @@
   ],
   "projects": [
     {
+      "name": "Company Watch",
+      "description": "a website to keep track of companies posting job listings without salary",
+      "url": "https://mvdevsunion.github.io/Good-and-Naughty/"
+    },
+    {
       "name": "W-Petition",
       "description": "backend for an E-Petition cause the parliment disapointed me",
       "url": "https://github.com/MvDevsUnion/WPetition"
